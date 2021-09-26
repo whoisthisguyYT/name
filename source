@@ -1,0 +1,118 @@
+-- SpencerPcGamer's Custom GUI to LUA 1.0.0
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local TPLOBBY = Instance.new("TextButton")
+local TPXP = Instance.new("TextButton")
+local TPBOSSRUSH = Instance.new("TextButton")
+local INFYIELD = Instance.new("TextButton")
+local HITBOXEXTENDER = Instance.new("TextButton")
+local MORETPS = Instance.new("TextButton")
+
+ScreenGui.Parent = game:GetService('CoreGui')
+ScreenGui.Enabled = false
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.new(0, 0.333333, 1)
+main.Position = UDim2.new(0.31505248, 0, 0.305511802, 0)
+main.Size = UDim2.new(0, 483, 0, 300)
+main.Active = true
+main.Draggable = true
+
+label.Name = "label"
+label.Parent = main
+label.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+label.Size = UDim2.new(0, 483, 0, 50)
+label.Font = Enum.Font.SciFi
+label.Text = "COOL GUI/UT FIGHTING THING"
+label.TextColor3 = Color3.new(0, 0, 0)
+label.TextSize = 39
+
+TPLOBBY.Name = "TPLOBBY"
+TPLOBBY.Parent = main
+TPLOBBY.BackgroundColor3 = Color3.new(1, 1, 1)
+TPLOBBY.BackgroundTransparency = 1
+TPLOBBY.Position = UDim2.new(0.0393374749, 0, 0.206666663, 0)
+TPLOBBY.Size = UDim2.new(0, 172, 0, 30)
+TPLOBBY.Font = Enum.Font.SourceSans
+TPLOBBY.Text = "TP LOBBY"
+TPLOBBY.TextColor3 = Color3.new(0, 0, 0)
+TPLOBBY.TextSize = 35
+TPLOBBY.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5.41071892, 107.746033, -748.715271, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+TPXP.Name = "TPXP"
+TPXP.Parent = main
+TPXP.BackgroundColor3 = Color3.new(1, 1, 1)
+TPXP.BackgroundTransparency = 1
+TPXP.Position = UDim2.new(0.511387169, 0, 0.206666663, 0)
+TPXP.Size = UDim2.new(0, 172, 0, 30)
+TPXP.Font = Enum.Font.SourceSans
+TPXP.Text = "TP XP ARENA"
+TPXP.TextColor3 = Color3.new(0, 0, 0)
+TPXP.TextSize = 35
+TPXP.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(58900.8359, 409.662933, -1.43175101, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+TPBOSSRUSH.Name = "TPBOSSRUSH"
+TPBOSSRUSH.Parent = main
+TPBOSSRUSH.BackgroundColor3 = Color3.new(1, 1, 1)
+TPBOSSRUSH.BackgroundTransparency = 1
+TPBOSSRUSH.Position = UDim2.new(0.217391312, 0, 0.486666679, 0)
+TPBOSSRUSH.Size = UDim2.new(0, 44, 0, 30)
+TPBOSSRUSH.Font = Enum.Font.SourceSans
+TPBOSSRUSH.Text = "TP BOSS RUSH ARENA"
+TPBOSSRUSH.TextColor3 = Color3.new(0, 0, 0)
+TPBOSSRUSH.TextSize = 30
+TPBOSSRUSH.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-10882.8818, 4676.35645, -248.955261, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+INFYIELD.Name = "INF YIELD"
+INFYIELD.Parent = main
+INFYIELD.BackgroundColor3 = Color3.new(1, 1, 1)
+INFYIELD.BackgroundTransparency = 1
+INFYIELD.Position = UDim2.new(0.511387169, 0, 0.486666679, 0)
+INFYIELD.Size = UDim2.new(0, 172, 0, 30)
+INFYIELD.Font = Enum.Font.SourceSans
+INFYIELD.Text = "INF YIELD"
+INFYIELD.TextColor3 = Color3.new(0, 0, 0)
+INFYIELD.TextSize = 35
+INFYIELD.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+HITBOXEXTENDER.Name = "HITBOXEXTENDER"
+HITBOXEXTENDER.Parent = main
+HITBOXEXTENDER.BackgroundColor3 = Color3.new(1, 1, 1)
+HITBOXEXTENDER.BackgroundTransparency = 1
+HITBOXEXTENDER.Position = UDim2.new(0.511387169, 0, 0.73333329, 0)
+HITBOXEXTENDER.Size = UDim2.new(0, 172, 0, 30)
+HITBOXEXTENDER.Font = Enum.Font.SourceSans
+HITBOXEXTENDER.Text = "HITBOX EXTENDER"
+HITBOXEXTENDER.TextColor3 = Color3.new(0, 0, 0)
+HITBOXEXTENDER.TextSize = 35
+HITBOXEXTENDER.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Olmafdnv/Op-hbe/main/Hbe'), true))()
+end)
+end)
+
+MORETPS.Name = "MORETPS"
+MORETPS.Parent = main
+MORETPS.BackgroundColor3 = Color3.new(1, 1, 1)
+MORETPS.BackgroundTransparency = 1
+MORETPS.Position = UDim2.new(0.0372670889, 0, 0.733333349, 0)
+MORETPS.Size = UDim2.new(0, 172, 0, 30)
+MORETPS.Font = Enum.Font.SourceSans
+MORETPS.Text = "MORETPS"
+MORETPS.TextColor3 = Color3.new(0, 0, 0)
+MORETPS.TextSize = 35
+MORETPS.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Olmafdnv/Op-hbe/main/Hbe'), true))()
+end)
+end)
